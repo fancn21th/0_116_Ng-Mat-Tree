@@ -1,11 +1,9 @@
 import { Injectable } from "@angular/core";
-import { HttpClient, HttpHeaders } from "@angular/common/http";
+import { HttpClient } from "@angular/common/http";
 import { Folder } from "../model/folder";
-import { Observable, of } from "rxjs";
+import { Observable } from "rxjs";
 
-@Injectable({
-  providedIn: "root"
-})
+@Injectable()
 export class DataServiceService {
   private folderUrl = "http://localhost:3000/folders"; // URL to web api
 
